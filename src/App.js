@@ -1,25 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import {
+  BrowserRouter,
+  Route
+} from 'react-router-dom';
+
+import Toolbar from './components/Navigation/Toolbar/Toolbar';
+import HomePage from './containers/HomePage/HomePage';
+// import Programmer from './containers/Programmer/Programmer';
+import Musician from './containers/Musician/Musician';
+import Traveller from './containers/Traveller/Traveller';
+import Footer from './components/Footer/Footer';
+
+import asyncComponent from './hoc/asyncComponent';
+// playing with loading components async using react-router-dom (could be done with suspense)
+const AsyncProgrammer = asyncComponent(() => {
+  return import('./containers/Programmer/Programmer');
+});
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+        <Toolbar />
+        <Route exact path="/" component={HomePage} />
+        <Route path="/programmer" component={AsyncProgrammer} />
+        <Route path="/musician" component={Musician} />
+        <Route path="/traveller" component={Traveller} />
+        <Footer />
+    </BrowserRouter>
   );
 }
 

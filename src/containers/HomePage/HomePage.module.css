@@ -1,0 +1,45 @@
+
+
+.HomePage {
+  display: flex;
+  flex-direction: column;
+  margin: 260px 150px;
+}
+
+.topContainer {
+  width: 100%;
+  position: relative;
+}
+
+.midContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  width: 100%;
+}
+
+.imageBox {
+  width: 48%;
+}
+
+
+img {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 10px 10px 10px lightgrey;
+}
+
+.Content {
+  position:absolute;
+  top: 40px;
+  left: 40px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.botContainer {
+  width: 100%;
+  margin: 40px 0;
+}
