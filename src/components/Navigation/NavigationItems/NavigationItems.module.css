@@ -1,0 +1,32 @@
+.NavigationItems {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+  width: 45%;
+}
+
+
+li {
+  display: flex;
+  color: white;
+  margin: auto;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+button {
+  border: 2px solid #62ebf0;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #21275e;
+}
+
+.activePage {
+  font-weight: bold;
+  color: #62ebf0;
+}
