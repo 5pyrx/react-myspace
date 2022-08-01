@@ -19,7 +19,7 @@ function HomePage() {
           <img src={homeImage} alt="A sunset with someone sat under a braintree" />
           <div className={style.Content}>
             <h2>Jonathan Spencer</h2>
-            <h1>A Freelance <br/> Human</h1>
+            <h1>An aspiring <br/> web developer</h1>
             <p>The only way to be proud of your work, <br/>
             is to put your self in to it</p>
           </div>
