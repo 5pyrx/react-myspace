@@ -7,6 +7,7 @@ import style from './HomePage.module.css';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 
 import Painting from '../../components/3dModels/ScenePainting';
+import GreenHouse from '../../components/3dModels/MangroveGreenhouse';
 
 function HomePage() {
   return (
@@ -18,14 +19,15 @@ function HomePage() {
         <Toolbar />
         <div className={style.Content}>
           <h2>Jay Spencer</h2>
-          <h1>An aspiring <br/> web developer</h1>
+          <h1>Creative web developer</h1>
           <p>The only way to be proud of your work, <br/>
           is to put your self in to it</p>
         </div>
         
         <Canvas className={style.Canvas} >
           <OrbitControls enableZoom={false} />
-          <Painting/>
+          <Painting />
+          {/* <GreenHouse  /> */}
         </Canvas>
         </div>
       </div>
