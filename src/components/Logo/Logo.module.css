@@ -8,9 +8,9 @@
 
 .brand:before {
   background-size: 100% 100%;
-  content: "JS-X";
+  content: ".JS";
   line-height: 205px;
-  font-size: 20px;
+  font-size: 26px;
   font-family: "HEAVITAS", "Helvetica Rounded", Arial, sans-serif;
   font-weight: bold;
   text-align: center;
@@ -22,7 +22,7 @@
 }
 
 .activeHomePage {
-  color: #62ebf0;
+  color: #ff4f98;
 }
 
 .logo{
@@ -35,7 +35,7 @@
 
 
 svg path{
-  positon:absolute;
+  position:absolute;
   fill:none;
   stroke-width:2;
   top:0;

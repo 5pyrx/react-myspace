@@ -1,22 +1,29 @@
 import React from 'react';
-
-import { NavLink } from 'react-router-dom';
-
+// import { Canvas } from 'react-three-fiber';
+// import { NavLink } from 'react-router-dom';
 import style from './HomePage.module.css';
 
 import homeImage from '../../assets/Backgrounds/homeImage.png';
-import Programmer from '../../assets/Backgrounds/ProgrammerImage.jpg';
-import Musician from '../../assets/Backgrounds/MusicianImage.jpg';
-import TravellerImage from '../../assets/Backgrounds/TravellerImage1.png';
+// import Programmer from '../../assets/Backgrounds/ProgrammerImage.jpg';
+// import Musician from '../../assets/Backgrounds/MusicianImage.jpg';
+// import TravellerImage from '../../assets/Backgrounds/TravellerImage1.png';
+// import ContentBanner from '../../components/ContentBanner/ContentBanner';
 
-import ContentBanner from '../../components/ContentBanner/ContentBanner';
+// function Box() {
+//   return (
+//     <mesh>
+//       <boxBufferGeometry attach="geometry" />
+//       <meshLambertMaterial attach="material" color="hotpink" />
+//     </mesh>
+//   )
+// }
 
 function HomePage() {
   return (
-    <div>
+    <>
       <div className={style.HomePage}>
         <div className={style.topContainer}>
-          <img src={homeImage} alt="A sunset with someone sat under a braintree" />
+          <img className={style.imgMain} src={homeImage} alt="A sunset with someone sat under a braintree" />
           <div className={style.Content}>
             <h2>Jonathan Spencer</h2>
             <h1>An aspiring <br/> web developer</h1>
@@ -24,7 +31,7 @@ function HomePage() {
             is to put your self in to it</p>
           </div>
         </div>
-        <ContentBanner />
+        {/* <ContentBanner />
         <div className={style.midContainer}>
           <div className={style.imageBox}>
             <NavLink to="/Programmer">
@@ -39,11 +46,11 @@ function HomePage() {
         </div>
         <div className={style.botContainer}>
           <NavLink to="/Traveller">
-            <img src={TravellerImage} alt="A sun sets over Thai fishing boats" />
+            <img className={style.imgMain} src={TravellerImage} alt="A sun sets over Thai fishing boats" />
           </NavLink>
-        </div>
+        </div> */}
       </div>
-    </div>
+    </>
   );
 }
 

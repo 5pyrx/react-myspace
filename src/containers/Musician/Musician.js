@@ -7,7 +7,7 @@ function Musician() {
   return (
     <div className={style.Musician}>
       <div className={style.topContainer}>
-        <img src={MusicianImage} alt="A computer with coding in screen"/>
+        <img className={style.imgMusic} src={MusicianImage} alt="A computer with coding in screen"/>
         <div className={style.Content}>
           <h2>I enjoy producing music</h2>
           <p>You can check out some of my tracks below</p>

@@ -7,7 +7,7 @@ function NavigationItems() {
   return (
     <ul className={style.NavigationItems}>
       <li><NavLink exact to="/Programmer" activeClassName={style.activePage}>Programmer</NavLink></li>
-      <li><NavLink exact to="/Musician" activeClassName={style.activePage}>Musician</NavLink></li>
+      {/* <li><NavLink exact to="/Musician" activeClassName={style.activePage}>Musician</NavLink></li> */}
       <li><NavLink exact to="/Traveller" activeClassName={style.activePage}>Traveller</NavLink></li>
       <li>
         <button>Get in touch</button>

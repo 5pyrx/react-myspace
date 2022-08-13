@@ -1,9 +1,7 @@
-
-
 .HomePage {
   display: flex;
   flex-direction: column;
-  margin: 260px 150px;
+  margin: 200px auto;
 }
 
 .topContainer {
@@ -25,9 +23,9 @@
 }
 
 
-img {
+.imgMain {
   width: 100%;
-  border-radius: 6px;
+  /* border-radius: 6px; */
   box-shadow: 10px 10px 10px lightgrey;
 }
 
