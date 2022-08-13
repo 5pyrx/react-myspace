@@ -6,6 +6,13 @@
   justify-content: flex-start;
 }
 
+.brand2 {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: flex-start;
+}
+
 .brand:before {
   background-size: 100% 100%;
   content: ".JS";
@@ -16,13 +23,13 @@
   text-align: center;
   width: 200px;
   height: 200px;
-  margin: 0 auto;
+  margin: auto;
   position: absolute;
   z-index: 99999 !important;
 }
 
 .activeHomePage {
-  color: #ff4f98;
+  color: #fff;
 }
 
 .logo{

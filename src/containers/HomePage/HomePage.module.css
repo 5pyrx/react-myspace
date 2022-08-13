@@ -1,43 +1,24 @@
 .HomePage {
+  margin: auto;
+  height: 100vh;
+}
+
+.Container {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
   display: flex;
-  flex-direction: column;
-  margin: 200px auto;
-}
-
-.topContainer {
-  width: 100%;
-  position: relative;
-}
-
-.midContainer {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: white;
-  width: 100%;
-}
-
-.imageBox {
-  width: 48%;
-}
-
-
-.imgMain {
-  width: 100%;
-  /* border-radius: 6px; */
-  box-shadow: 10px 10px 10px lightgrey;
 }
 
 .Content {
   position:absolute;
-  top: 40px;
+  top: 400px;
   left: 40px;
   font-size: 1.2rem;
   color: white;
+  z-index: 2;
 }
 
-.botContainer {
-  width: 100%;
-  margin: 40px 0;
+.Canvas {
+  z-index: 1;
 }

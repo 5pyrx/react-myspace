@@ -4,7 +4,7 @@ import {
   Route
 } from 'react-router-dom';
 
-import Toolbar from './components/Navigation/Toolbar/Toolbar';
+// import Toolbar from './components/Navigation/Toolbar/Toolbar';
 import HomePage from './containers/HomePage/HomePage';
 import Programmer from './containers/Programmer/Programmer';
 import Musician from './containers/Musician/Musician';
@@ -14,7 +14,7 @@ import Footer from './components/Footer/Footer';
 function App() {
   return (
     <BrowserRouter>
-        <Toolbar />
+        {/* <Toolbar /> */}
         <Route exact path="/" component={HomePage} />
         <Route path="/programmer" component={Programmer} />
         <Route path="/musician" component={Musician} />
