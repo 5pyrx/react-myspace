@@ -24,7 +24,7 @@ button {
   padding: 10px;
   font-size: 14px;
   color: #fff;
-  background-color: #21275e;
+  background-color: transparent;
 }
 
 button:hover {

@@ -14,7 +14,7 @@
 }
 
 .brand:before {
-  background-size: 100% 100%;
+  background-size: 100%;
   content: ".JS";
   line-height: 205px;
   font-size: 26px;
