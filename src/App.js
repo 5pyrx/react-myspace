@@ -6,8 +6,8 @@ import {
 
 // import Toolbar from './components/Navigation/Toolbar/Toolbar';
 import HomePage from './containers/HomePage/HomePage';
-import Programmer from './containers/Programmer/Programmer';
-import Traveller from './containers/Traveller/Traveller';
+import Project from './containers/Project/Project';
+import Experience from './containers/Experience/Experience';
 import Footer from './components/Footer/Footer';
 
 function App() {
@@ -15,8 +15,8 @@ function App() {
     <BrowserRouter>
         {/* <Toolbar /> */}
         <Route exact path="/" component={HomePage} />
-        <Route path="/programmer" component={Programmer} />
-        <Route path="/traveller" component={Traveller} />
+        <Route path="/#Project" component={Project} />
+        <Route path="/#experience" component={Experience} />
         <Footer />
     </BrowserRouter>
   );

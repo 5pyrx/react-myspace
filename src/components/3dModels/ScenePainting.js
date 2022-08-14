@@ -13,7 +13,7 @@ export default function Model(props) {
   const group = useRef()
   const { nodes, materials } = useGLTF('/scenePainting.gltf')
   return (
-    <group ref={group} {...props} dispose={null} scale={0.85}>
+    <group ref={group} {...props} dispose={null} scale={0.89}>
       <group rotation={[-Math.PI / 2.2, 0, 0]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           {/* Apple */}
