@@ -7,7 +7,6 @@ import {
 // import Toolbar from './components/Navigation/Toolbar/Toolbar';
 import HomePage from './containers/HomePage/HomePage';
 import Programmer from './containers/Programmer/Programmer';
-import Musician from './containers/Musician/Musician';
 import Traveller from './containers/Traveller/Traveller';
 import Footer from './components/Footer/Footer';
 
@@ -17,7 +16,6 @@ function App() {
         {/* <Toolbar /> */}
         <Route exact path="/" component={HomePage} />
         <Route path="/programmer" component={Programmer} />
-        <Route path="/musician" component={Musician} />
         <Route path="/traveller" component={Traveller} />
         <Footer />
     </BrowserRouter>

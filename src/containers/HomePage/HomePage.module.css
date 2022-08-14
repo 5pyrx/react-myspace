@@ -12,8 +12,8 @@
 
 .Content {
   position:absolute;
-  top: 400px;
-  left: 40px;
+  top: 240px;
+  left: 3rem;
   font-size: 1.2rem;
   color: white;
   z-index: 2;
