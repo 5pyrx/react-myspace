@@ -1,14 +1,53 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavHashLink } from 'react-router-hash-link';
+import { useLocation } from "react-router-dom";
 
 import style from './NavigationItems.module.css';
 
 function NavigationItems() {
+  const { hash } = useLocation();
+  console.log(hash);
   return (
       <ul className={style.NavigationItems}>
-        <li><NavLink exact to="/#projects" activeClassName={style.activePage}>Projects</NavLink></li>
-        <li><NavLink exact to="/#experience" activeClassName={style.activePage}>Experience</NavLink></li>
-        <li><NavLink exact to="/#contact" activeClassName={style.activePage}><li>Contact</li></NavLink></li>
+        <li>
+          <NavHashLink 
+            exact to="#projects" 
+            activeClassName={style.activePage}
+            smooth
+            activeStyle={{
+              fontWeight: "bold",
+              color: "#ff4f98"
+            }}
+          >
+            Projects
+          </NavHashLink>
+        </li>
+        <li>
+        <NavHashLink 
+            exact to="#experience" 
+            activeClassName={style.activePage}
+            smooth
+            activeStyle={{
+              fontWeight: "bold",
+              color: "#ff4f98"
+            }}
+          >
+            Experience
+          </NavHashLink>
+        </li>
+        <li>
+        <NavHashLink 
+            exact to="#contact" 
+            activeClassName={style.activePage}
+            smooth
+            activeStyle={{
+              fontWeight: "bold",
+              color: "#ff4f98"
+            }}
+          >
+            Contact
+          </NavHashLink>
+        </li>
       </ul>
   );
 }

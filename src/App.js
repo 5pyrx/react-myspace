@@ -4,20 +4,19 @@ import {
   Route
 } from 'react-router-dom';
 
-// import Toolbar from './components/Navigation/Toolbar/Toolbar';
+// Containers
 import HomePage from './containers/HomePage/HomePage';
 import Project from './containers/Project/Project';
 import Experience from './containers/Experience/Experience';
-import Footer from './components/Footer/Footer';
+import Contact from './containers/Contact/Contact';
 
 function App() {
   return (
     <BrowserRouter>
-        {/* <Toolbar /> */}
         <Route exact path="/" component={HomePage} />
-        <Route path="/#Project" component={Project} />
+        <Route path="/#projects" component={Project} />
         <Route path="/#experience" component={Experience} />
-        <Footer />
+        <Route path="/#contact" component={Contact} />
     </BrowserRouter>
   );
 }

@@ -26,10 +26,11 @@
   margin: auto;
   position: absolute;
   z-index: 99999 !important;
+  color: #fff;
 }
 
 .activeHomePage {
-  color: #fff;
+  color: #f9eaca;
 }
 
 .logo{

@@ -1,22 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import { HashLink as Link } from 'react-router-hash-link';
 import style from './HomePage.module.css';
 
+// Containers
 import Project from '../Project/Project.js';
 import Experience from '../Experience/Experience.js';
+
+//Components
 import NavigationItems from '../../components/Navigation/NavigationItems';
 import Logo from '../../components/Logo/Logo';
+import Contact from '../Contact/Contact';
 
+// 3D model
 import Painting from '../../components/3dModels/ScenePainting';
-// import GreenHouse from '../../components/3dModels/MangroveGreenhouse';
 
 function HomePage() {
+  const [ welcomeTime, setWelcomeTime ] = useState();
+  useEffect(() => {
+    setWelcomeTime(getDateTime());
+  }, []);
 
   const getDateTime = () => {
-    let date = new Date();
-    let hour = date.getHours();
+    const date = new Date();
+    const hour = date.getHours();
     console.log(date);
     console.log(hour);
     let welcomeMessage = "";
@@ -39,11 +46,11 @@ function HomePage() {
         <div className={style.NavBar}>
           <NavigationItems />
         </div>
-        <section>
+        <section id="home">
           <div className={style.topContainer}>
             <div className={style.contentWrapper}>
               <div className={style.Content}>
-                <h2>👋 Good {getDateTime()}</h2>
+                <h2>👋 Good {welcomeTime}</h2>
                 <h2>I'm Jay Spencer</h2>
                 <h1>A creative front-end <br/>
                 web developer</h1>
@@ -52,15 +59,17 @@ function HomePage() {
             <Canvas className={style.Canvas} >
               <OrbitControls enableZoom={false} enablePan={false} />
               <Painting />
-              {/* <GreenHouse  /> */}
             </Canvas>
           </div>
         </section>
-        <section>
+        <section id="projects">
           <Project />
         </section>
-        <section>
+        <section id="experience">
           <Experience />
+        </section>
+        <section id="contact">
+          <Contact />
         </section>
       </div>
     </>

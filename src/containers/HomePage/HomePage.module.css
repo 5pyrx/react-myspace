@@ -31,14 +31,13 @@ section {
 }
 
 .contentWrapper {
-  height: 12rem;
-  overflow: auto;
-}
-
-.Content {
   position: absolute;
   top: 240px;
   left: 3rem;
+}
+
+.Content {
+  position: relative;
   font-size: 1.2rem;
   color: white;
   z-index: 2;
