@@ -9,3 +9,7 @@
   font-weight: bold;
   z-index: -100;
 }
+
+.Footer a {
+  color: #fff;
+}

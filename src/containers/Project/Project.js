@@ -13,7 +13,7 @@ function Project() {
         <div className={style.singleProject}></div>
       </div>
       <div className={style.coursesContainer}>
-        <h3>Courses</h3>
+        <h3>Learning Material</h3>
         <p><a href="https://teamtreehouse.com/profiles/spencerx">@Treehouse</a></p>
         <p><a href="https://javascriptbook.com/">Javascript & jQuery - Jon Duckett's </a></p>
         <p><a href="https://javascriptbook.com/">Academinds React Udemy Course</a></p>

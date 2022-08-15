@@ -1,12 +1,12 @@
 import React from 'react';
 import { NavHashLink } from 'react-router-hash-link';
-import { useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 
 import style from './NavigationItems.module.css';
 
 function NavigationItems() {
-  const { hash } = useLocation();
-  console.log(hash);
+  // const { hash } = useLocation();
+  // console.log(hash);
   return (
       <ul className={style.NavigationItems}>
         <li>

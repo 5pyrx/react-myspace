@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
+import { useLocation } from "react-router-dom";
+
+// Styling
 import style from './HomePage.module.css';
 
 // Containers
@@ -12,7 +15,7 @@ import NavigationItems from '../../components/Navigation/NavigationItems';
 import Logo from '../../components/Logo/Logo';
 import Contact from '../Contact/Contact';
 
-// 3D model
+// 3D model(s)
 import Painting from '../../components/3dModels/ScenePainting';
 
 function HomePage() {
@@ -37,6 +40,9 @@ function HomePage() {
     return welcomeMessage;
   };
 
+  const { hash } = useLocation();
+  console.log(hash);
+
   return (
     <>
       <div className={style.HomePage}>
@@ -48,6 +54,7 @@ function HomePage() {
         </div>
         <section id="home">
           <div className={style.topContainer}>
+            
             <div className={style.contentWrapper}>
               <div className={style.Content}>
                 <h2>👋 Good {welcomeTime}</h2>
