@@ -6,7 +6,7 @@
 }
 
 .Skills h1 {
-  margin: 5rem;
+  margin: 8rem auto 5rem;
 }
 
 .skillContainer {
@@ -36,4 +36,8 @@
   width: 80%;
   height: 40vh;
   color: black;
+}
+
+.singleSkill p {
+  font-size: 0.8rem;
 }

@@ -1,11 +1,33 @@
 .Experience {
   display: flex;
-  margin: auto;
   height: 100vh;
   width: 100%;
 }
 
 .experienceContent {
-  font-size: 1.2rem;
-  color: white;
+  font-size: 0.8rem;
+  color: black;
+  margin: auto;
+}
+
+.contentTitle {
+  margin: auto;
+  text-align: center;
+}
+
+.boxFlex {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.boxContainer {
+  margin: 2rem;
+  width: 26%;
+  height: 60vh;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow:0 3px 10px rgb(0 0 0 / 0.2);
+  padding: 2rem;
 }

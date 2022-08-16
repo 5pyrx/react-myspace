@@ -1,0 +1,12 @@
+.Contact {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+}
+
+.contactContainer {
+    margin: auto;
+    height: 4rem;
+    width: 40%;
+    text-align: center;
+}

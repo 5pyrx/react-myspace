@@ -1,13 +1,12 @@
 .Footer {
+  position: absolute;
   bottom: 0;
-  position: fixed;
   height: 80px;
   background-color: #21275e;
   width: 100%;
   color: white;
   text-align: center;
   font-weight: bold;
-  z-index: -100;
 }
 
 .Footer a {

@@ -10,7 +10,7 @@
 .NavigationItems li {
   display: flex;
   margin: auto 0;
-  justify-content: right;
+  align-items: right;
 }
 
 .NavigationItems a {
@@ -36,4 +36,17 @@
 .activePage {
   font-weight: bold;
   color: #ff4f98;
+}
+
+.flexList {
+
+  display: flex;
+  width: 6rem;
+  justify-content: space-between;
+}
+
+.flexList img {
+  width: 2rem;
+  height: 2rem;
+
 }

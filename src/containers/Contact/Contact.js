@@ -8,12 +8,13 @@ function Contact() {
   return (
     <>
       <div className={style.Contact}>
-        <div>
-          <h3>Contact me</h3>
+        <div className={style.contactContainer}>
+          <h3>There may be a contact form here...soon</h3>
           
         </div>
+        <Footer />
       </div>
-      <Footer />
+      
     </>
   );
 }
