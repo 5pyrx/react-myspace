@@ -5,7 +5,14 @@ import style from './Logo.module.css';
 
 function Logo() {
   return (
-    <NavHashLink exact to="/#home" activeClassName={style.activeHomePage}>
+    <NavHashLink 
+      exact to="/#home" 
+      activeClassName={style.activeHomePage}
+      activeStyle={{
+        fontWeight: "bold",
+        color: "#ff4f98"
+      }}
+    >
       <div className={style.brand}>
         <div className={style.logo}>
           <svg width="200px" height="200px" >

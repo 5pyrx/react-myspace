@@ -27,8 +27,6 @@ function HomePage() {
   const getDateTime = () => {
     const date = new Date();
     const hour = date.getHours();
-    console.log(date);
-    console.log(hour);
     let welcomeMessage = "";
     if (hour > 0 && hour < 12) {
       welcomeMessage = "Morning";
@@ -54,8 +52,7 @@ function HomePage() {
         </div>
         <section id="home">
           <div className={style.topContainer}>
-            
-            <div className={style.contentWrapper}>
+          <div className={style.contentWrapper}>
               <div className={style.Content}>
                 <h2>👋 Good {welcomeTime}</h2>
                 <h2>I'm Jay Spencer</h2>
@@ -63,10 +60,12 @@ function HomePage() {
                 web developer</h1>
               </div>
             </div>
+            
             <Canvas className={style.Canvas} >
               <OrbitControls enableZoom={false} enablePan={false} />
               <Painting />
             </Canvas>
+            
           </div>
         </section>
         <section id="projects">
