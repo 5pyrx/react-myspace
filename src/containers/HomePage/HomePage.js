@@ -7,6 +7,7 @@ import { useLocation } from "react-router-dom";
 import style from './HomePage.module.css';
 
 // Containers
+import SkillsView from '../Skills/Skills.js';
 import Project from '../Project/Project.js';
 import Experience from '../Experience/Experience.js';
 
@@ -67,6 +68,9 @@ function HomePage() {
             </Canvas>
             
           </div>
+        </section>
+        <section id="skills">
+          <SkillsView />
         </section>
         <section id="projects">
           <Project />

@@ -14,6 +14,26 @@ function NavigationItems() {
       <ul className={style.NavigationItems}>
         <li>
           <NavHashLink 
+            exact to="#skills" 
+            smooth
+            style={
+              isActive("#home")
+                ? {
+                  color: "white"
+                } : {
+                  color: "black"
+                }
+            }
+            activeStyle={{
+              fontWeight: "bold",
+              color: "#ff4f98"
+            }}
+          >
+            Skills
+          </NavHashLink>
+        </li>
+        <li>
+          <NavHashLink 
             exact to="#projects" 
             smooth
             style={
