@@ -1,6 +1,8 @@
 import React from 'react';
 import { NavHashLink } from 'react-router-hash-link';
 import { useLocation } from "react-router-dom";
+// custom hook
+// import { useScrollPosition } from '../../Hooks/useScrollPosition';
 
 // Style
 import style from './NavigationItems.module.css';
@@ -12,16 +14,26 @@ import GithubLogo from '../../assets/GithubBlack.png';
 function NavigationItems() {
   const { hash } = useLocation();
   const isActive = (a) => {
-    return hash === a;
+    if (hash === "") {
+      return true;
+    } else {
+      return hash === a;
+    }
   };
   
   return (
       <ul className={style.NavigationItems}>
         <li className={style.flexList}>
-          <a href="https://www.linkedin.com/in/jonathan-spencer-55675792/">
+          <a 
+            href="https://www.linkedin.com/in/jonathan-spencer-55675792/" 
+            target="_blank" 
+            rel="noopener noreferrer">
             <img src={LinkedInLogo} alt="Linkedin"/>
           </a>
-          <a href="https://github.com/5pyrx">
+          <a 
+            href="https://github.com/5pyrx" 
+            target="_blank" 
+            rel="noopener noreferrer">
             <img src={GithubLogo} alt="Github"/>
           </a>
         </li>
@@ -71,7 +83,7 @@ function NavigationItems() {
             activeClassName={style.activePage}
             smooth
             style={
-              isActive("" || "#home")
+              isActive("#home")
                 ? {
                   color: "white"
                 } : {
@@ -92,7 +104,7 @@ function NavigationItems() {
             activeClassName={style.activePage}
             smooth
             style={
-              isActive("" || "#home")
+              isActive("#home")
                 ? {
                   color: "white"
                 } : {

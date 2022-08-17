@@ -2,8 +2,8 @@
 .brand {
   width: 200px;
   height: 200px;
-  display: flex;
-  justify-content: flex-start;
+  /* display: flex; */
+  /* justify-content: flex-start; */
 }
 
 .brand2 {
@@ -17,6 +17,7 @@
   background-size: 100%;
   content: ".JS";
   line-height: 205px;
+  text-shadow: -1px -0.5px 0 #000, 1px 0.5px 0 #000, -1px 0.5px 0 #000, 1px 0.5px 0 #000;
   font-size: 26px;
   font-family: "HEAVITAS", "Helvetica Rounded", Arial, sans-serif;
   font-weight: bold;
