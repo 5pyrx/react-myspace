@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import { useLocation } from "react-router-dom";
 
 // Styling
 import style from './HomePage.module.css';
@@ -38,9 +37,6 @@ function HomePage() {
     }
     return welcomeMessage;
   };
-
-  const { hash } = useLocation();
-  console.log(hash);
 
   return (
     <>
