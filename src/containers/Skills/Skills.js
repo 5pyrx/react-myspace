@@ -22,12 +22,22 @@ function Skills() {
           <p>Stack Overflow</p>
         </div>
       </div>
-      <div className={style.learningContainer}>
-        <h2>Learning Material</h2>
-        <p><a href="https://teamtreehouse.com/profiles/spencerx">@Treehouse</a></p>
-        <p><a href="https://javascriptbook.com/">Javascript & jQuery - Jon Duckett's </a></p>
-        <p><a href="https://javascriptbook.com/">Academinds React Udemy Course</a></p>
-        <p><a href="https://javascriptbook.com/">The Road to Reach - Robin Weiruch</a></p>
+      <div className={style.learningFlex}>
+        <h3>Learning Materials</h3>
+        <div className={style.learningContainer}>
+          <p>
+            <a 
+              href="https://teamtreehouse.com/profiles/spencerx"
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              @Treehouse
+            </a>
+          </p>
+          <p><a href="https://javascriptbook.com/">Javascript & jQuery - Jon Duckett's </a></p>
+          <p><a href="https://javascriptbook.com/">Academinds React Udemy Course</a></p>
+          <p><a href="https://javascriptbook.com/">The Road to Reach - Robin Weiruch</a></p>
+        </div>
       </div>
     </div>
   );

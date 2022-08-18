@@ -7,6 +7,7 @@ function Logo() {
   return (
     <NavHashLink 
       exact to="/#home" 
+      smooth
       activeClassName={style.activeHomePage}
       activeStyle={{
         fontWeight: "bold",
