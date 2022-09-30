@@ -35,7 +35,8 @@
 }
 
 .buttonBackground {
-  background-color: #fff;
+  all: unset;
+  background-color: #ff4f98;
   border-radius: 100px;
   width: 100px;
   height: 100px;
@@ -43,14 +44,18 @@
   display: flex;
   margin: auto;
   z-index: 10;
-  box-shadow:0 3px 10px rgb(0 0 0 / 0.2);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  align-items: center;
 }
 
-.buttonDownload {
-  all: unset;
-  cursor: pointer;
-  background-color: transparent;
-  color: #000;
-  margin: auto;
+.buttonBackground:active {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+  font-weight: bold;
+}
 
+.buttonFont {
+  margin: auto;
 }

@@ -59,15 +59,15 @@ function HomePage() {
             </div>
             
             <Canvas className={style.Canvas} >
-              <OrbitControls enableZoom={false} enablePan={false} />
+              <OrbitControls enableZoom={false} enablePan={false} autoRotate={true} />
               <Painting />
             </Canvas>
             
           </div>
         </section>
-        <section id="skills">
+        {/* <section id="skills">
           <SkillsView />
-        </section>
+        </section> */}
         <section id="projects">
           <Project />
         </section>

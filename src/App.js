@@ -15,7 +15,7 @@ function App() {
   return (
     <BrowserRouter>
         <Route exact path="/" component={HomePage} />
-        <Route path="/#skills" component={Skills} />
+        {/* <Route path="/#skills" component={Skills} /> */}
         <Route path="/#projects" component={Project} />
         <Route path="/#experience" component={Experience} />
         <Route path="/#contact" component={Contact} />

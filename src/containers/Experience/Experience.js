@@ -8,7 +8,6 @@ import style from './Experience.module.css';
 function Experience() {
   const [ modalState, setModalState ] = useState(false);
 
-
   return (
     <div className={style.Experience}>
       {modalState ? 
@@ -26,16 +25,14 @@ function Experience() {
               Gummies biscuit pie halvah pastry brownie lemon drops. Danish cake icing jujubes lollipop oat cake chocolate cake tootsie roll candy. 
               Dessert caramels fruitcake tart donut donut.</p>
           </div>
-          <div className={style.buttonBackground}>
-            <button 
-              className={style.buttonDownload}
-              onClick={() => {
+          <button className={style.buttonBackground} onClick={() => {
                 setModalState(true)
-              }}
-            >
+              }}>
+                <h3 className={style.buttonFont}>
+
               View CV
-            </button>
-          </div>
+                </h3>
+          </button>
           <div className={style.boxContainer}>
             <h3>Scrum Master</h3>
             <p>Cupcake ipsum dolor sit amet candy canes. Cheesecake croissant croissant jujubes marzipan biscuit bear claw. 

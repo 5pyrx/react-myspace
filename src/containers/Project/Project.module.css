@@ -9,21 +9,57 @@
 }
 
 .projContainer {
-  width: 80%;
+  width: 70%;
   color: black;
   font-size: 1rem;
   text-align: center;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 
-.singleProject {
+.singleProjectWrap {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.singleProject1 {
   margin: 1.5rem 0.5rem;
-  width: 460px;
-  height: 24vh;
+  padding: 1rem 1rem 0;
+  width: 32rem;
+  height: 28vh;
   background-color: #fff;
   border-radius: 6px;
   box-shadow:0 3px 10px rgb(0 0 0 / 0.2);
 }
 
+.singleProjectImage1 { 
+  background-image: url('../../assets/wasteNot.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32rem;
+  height: 100%;
+  border-radius: 8px;
+  margin: auto;
+}
+
+.singleProject2 {
+  margin: 1.5rem 0.5rem;
+  padding: 1rem 1rem 0;
+  width: 32rem;
+  height: 28vh;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow:0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+
+.sidePanel {
+  width: 460px;
+  height: 24vh;
+}
+
+.sidePanel h3 {
+
+}

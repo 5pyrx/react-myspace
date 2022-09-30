@@ -16,6 +16,7 @@ export default function Model(props) {
     <group ref={group} {...props} dispose={null} scale={0.89}>
       <group rotation={[-Math.PI / 2.2, 0, 0]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
+
           {/* Apple */}
           <group position={[-0.96, 1.35, -0.02]}>
             <mesh geometry={nodes.Object_4.geometry} material={nodes.Object_4.material} />

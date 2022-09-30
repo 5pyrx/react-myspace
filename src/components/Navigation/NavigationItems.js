@@ -37,18 +37,11 @@ function NavigationItems() {
             <img src={GithubLogo} alt="Github"/>
           </a>
         </li>
-        <li>
+        {/* <li>
           <NavHashLink 
             exact to="#skills" 
             smooth
-            style={
-              isActive("#home")
-                ? {
-                  color: "white"
-                } : {
-                  color: "black"
-                }
-            }
+            style={style.NavLink}
             activeStyle={{
               fontWeight: "bold",
               color: "#ff4f98"
@@ -56,19 +49,12 @@ function NavigationItems() {
           >
             Skills
           </NavHashLink>
-        </li>
+        </li> */}
         <li>
           <NavHashLink 
             exact to="#projects" 
             smooth
-            style={
-              isActive("#home")
-                ? {
-                  color: "white"
-                } : {
-                  color: "black"
-                }
-            }
+            style={style.NavLink}
             activeStyle={{
               fontWeight: "bold",
               color: "#ff4f98"
@@ -82,14 +68,7 @@ function NavigationItems() {
             exact to="#experience" 
             activeClassName={style.activePage}
             smooth
-            style={
-              isActive("#home")
-                ? {
-                  color: "white"
-                } : {
-                  color: "black"
-                }
-            }
+            style={style.NavLink}
             activeStyle={{
               fontWeight: "bold",
               color: "#ff4f98"
@@ -103,14 +82,7 @@ function NavigationItems() {
             exact to="#contact" 
             activeClassName={style.activePage}
             smooth
-            style={
-              isActive("#home")
-                ? {
-                  color: "white"
-                } : {
-                  color: "black"
-                }
-            }
+            style={style.NavLink}
             activeStyle={{
               fontWeight: "bold",
               color: "#ff4f98"
