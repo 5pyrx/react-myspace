@@ -5,13 +5,13 @@
 }
 
 .experienceContent {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: black;
   margin: auto;
 }
 
 .contentTitle {
-  margin: auto;
+  margin: 6rem auto 2rem;
   text-align: center;
 }
 
@@ -25,14 +25,18 @@
 }
 
 .boxContainer {
-  margin: 2rem;
+  margin: 3rem 2rem;
   width: 300px;
-  height: 300px;
   background-color: #fff;
   border-radius: 6px;
   box-shadow:0 3px 10px rgb(0 0 0 / 0.2);
   padding: 2rem;
 }
+
+.boxContainer p {
+  line-height: 2;
+}
+
 
 .buttonBackground {
   all: unset;

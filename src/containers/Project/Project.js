@@ -2,38 +2,39 @@ import React from 'react';
 
 import style from './Project.module.css';
 
+// import codeIcon from '../../assets/code.svg';
+
 function Project() {
   return (
     <div className={style.Project}>
-      <h1>Projects</h1>
+      <h1 className={style.Header}>Projects</h1>
       <div className={style.projContainer}>
         <div className={style.singleProjectWrap}>
           <div className={style.singleProject1}>
-            <a href="https://waste-not-react.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-              <div className={style.singleProjectImage1}></div>
-            </a>
+            <div className={style.singleProjectImage1}></div>
+            <div className={style.projectLinks}>
+            <button className={style.borderLeft}>
+              <a href="https://waste-not-react.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                <img src={require('../../assets/website.svg').default} alt='codeIcon' />
+              </a>
+              </button>
+              <button className={style.borderRight}>
+                <a href="https://github.com/5pyrx/waste-not" target="_blank" rel="noopener noreferrer">
+                  <img src={require('../../assets/code.svg').default} alt='codeIcon' />
+                </a>
+              </button>
+            </div>
           </div>
           <div className={style.sidePanel}>
             <h3>Waste Not</h3>
-            <h5>An authenticated CRUD App</h5>
+            <h4>An authenticated CRUD App</h4>
             <p>Built using: git, npm, ajax, firebase & react.js</p>
             <p>Waste not is a responsive web app that fetchs a 
-              list of possible recipes you could cook, 
-              based upon the food a user stores to their profile. 
-              These recipes can then be added to a users favourites to view upon next login. 
+              list of possible recipes a user could cook, 
+              based upon the food they have in their kitchen. 
+              These recipes can then be saved to their favourites, ready to view when they next login. 
             </p>
           </div>
-        </div>
-        <div className={style.singleProjectWrap}>
-          <div className={style.sidePanel}>
-              <h3>Waste Not</h3>
-              <h5>React.js, AJAX, Firebase</h5>
-              <p></p>
-            </div>
-          <div className={style.singleProject2}>
-            <div className={style.singleProjectImage2}></div>
-          </div>
-          
         </div>
       </div>
     </div>

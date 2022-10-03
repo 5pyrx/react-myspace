@@ -6,7 +6,7 @@ import { OrbitControls } from '@react-three/drei';
 import style from './HomePage.module.css';
 
 // Containers
-import SkillsView from '../Skills/Skills.js';
+// import SkillsView from '../Skills/Skills.js';
 import Project from '../Project/Project.js';
 import Experience from '../Experience/Experience.js';
 
@@ -59,7 +59,7 @@ function HomePage() {
             </div>
             
             <Canvas className={style.Canvas} >
-              <OrbitControls enableZoom={false} enablePan={false} autoRotate={true} />
+              <OrbitControls enableZoom={false} enablePan={false} autoRotate={true} autoRotateSpeed={0.4}/>
               <Painting />
             </Canvas>
             

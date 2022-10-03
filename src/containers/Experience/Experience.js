@@ -15,15 +15,15 @@ function Experience() {
         : 
       <div className={style.experienceContent}>
         <div className={style.contentTitle}>
-          <h2>Professional Experience</h2>
-          <p>I have worked in digital teams for > 6 years</p>
+          <h1>Professional Experience</h1>
+          <p>I have worked in digital teams for > 7 years</p>
         </div>
         <div className={style.boxFlex}>
           <div className={style.boxContainer}>
             <h3>Product Manager</h3>
-            <p>Cupcake ipsum dolor sit amet candy canes. Cheesecake croissant croissant jujubes marzipan biscuit bear claw. 
-              Gummies biscuit pie halvah pastry brownie lemon drops. Danish cake icing jujubes lollipop oat cake chocolate cake tootsie roll candy. 
-              Dessert caramels fruitcake tart donut donut.</p>
+            <p>I have worked as a digital product manager for 5 years; 
+              assisting in the research, design and development of new user experiences 
+              in the financial services industry.</p>
           </div>
           <button className={style.buttonBackground} onClick={() => {
                 setModalState(true)
@@ -34,10 +34,10 @@ function Experience() {
                 </h3>
           </button>
           <div className={style.boxContainer}>
-            <h3>Scrum Master</h3>
-            <p>Cupcake ipsum dolor sit amet candy canes. Cheesecake croissant croissant jujubes marzipan biscuit bear claw. 
-              Gummies biscuit pie halvah pastry brownie lemon drops. Danish cake icing jujubes lollipop oat cake chocolate cake tootsie roll candy. 
-              Dessert caramels fruitcake tart donut donut.</p>
+            <h3>Agile Scrum Master</h3>
+            <p>I was a scrum master for 2 years, assisting a remote team 
+              delivering complex data dashboards for a tier 1 bank. 
+              Giving me a deep understand of how digital teams operate.</p>
           </div>
         </div>
       </div>
