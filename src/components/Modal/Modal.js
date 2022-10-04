@@ -49,7 +49,15 @@ function Modal({ closeModal }) {
               restaurant staff and share tips amongst their colleagues. I recruited a team, defined the product vision, detailed wireframes and user journeys and organised weekend development sessions/sprints. We successfully launched our mobile app to the iOS Appstore in early 2017.
               I was responsible for; building and leading the team from ideation through to launch, defining the business proposition and anything else required to enable us to launch.
             </p>
-            
+            <h3>PROFESSIONAL CERTIFICATIONS</h3>
+            <p>General Assembly: Product Management</p>
+            <p>Scrum.org: Professional Scrum Master 1</p>
+            <p>ITIL: Foundation</p>
+            <h3>EDUCATION</h3>
+            <h5>Degree</h5>
+            <p>Musical Theatre - 1st Class BA(hons): London College Music University of West London</p>
+            <h5>A Levels</h5>
+            <p>Physics (C), Maths (C), Music (C): Blue Coat C of E School</p>
         </div>
       </div>
     );

@@ -47,10 +47,15 @@
     margin: 0 1rem;
 }
 
+.message textarea{
+    width: 222px;
+    height: 4rem;
+}
+
 
 .Form button{
     all: unset;
-    margin: 2rem auto;
+    margin: 1.5rem auto 2rem;
     width: 100%;
     height: 2.5rem;
     color: #fff;
