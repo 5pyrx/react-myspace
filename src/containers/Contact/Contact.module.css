@@ -5,8 +5,13 @@
 }
 
 .contactContainer {
+    margin: 3rem 2rem;
+    width: 30rem;
+    height:18rem;
     margin: auto;
-    height: 4rem;
-    width: 40%;
-    text-align: center;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    padding: 2rem;
+    overflow: scroll;
 }

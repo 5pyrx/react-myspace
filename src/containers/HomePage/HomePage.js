@@ -51,7 +51,7 @@ function HomePage() {
           <div className={style.topContainer}>
           <div className={style.contentWrapper}>
               <div className={style.Content}>
-                <h2>👋 Good {welcomeTime}</h2>
+                <h2><span role="img" aria-label="wave">👋</span> Good {welcomeTime}</h2>
                 <h2>I'm Jay Spencer</h2>
                 <h1>A creative front-end <br/>
                 web developer</h1>

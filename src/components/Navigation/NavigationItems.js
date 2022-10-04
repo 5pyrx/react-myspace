@@ -12,14 +12,14 @@ import LinkedInLogo from '../../assets/LinkedinBlack.png';
 import GithubLogo from '../../assets/GithubBlack.png';
 
 function NavigationItems() {
-  const { hash } = useLocation();
-  const isActive = (a) => {
-    if (hash === "") {
-      return true;
-    } else {
-      return hash === a;
-    }
-  };
+  // const { hash } = useLocation();
+  // const isActive = (a) => {
+  //   if (hash === "") {
+  //     return true;
+  //   } else {
+  //     return hash === a;
+  //   }
+  // };
   
   return (
       <ul className={style.NavigationItems}>

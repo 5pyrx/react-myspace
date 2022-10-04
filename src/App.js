@@ -6,7 +6,7 @@ import {
 
 // Containers
 import HomePage from './containers/HomePage/HomePage';
-import Skills from './containers/Skills/Skills';
+// import Skills from './containers/Skills/Skills';
 import Project from './containers/Project/Project';
 import Experience from './containers/Experience/Experience';
 import Contact from './containers/Contact/Contact';
