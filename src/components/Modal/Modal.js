@@ -50,14 +50,14 @@ function Modal({ closeModal }) {
               I was responsible for; building and leading the team from ideation through to launch, defining the business proposition and anything else required to enable us to launch.
             </p>
             <h3>PROFESSIONAL CERTIFICATIONS</h3>
-            <p>General Assembly: Product Management</p>
-            <p>Scrum.org: Professional Scrum Master 1</p>
-            <p>ITIL: Foundation</p>
+            <p className={style.smallLineHeight}>General Assembly: Product Management</p>
+            <p className={style.smallLineHeight}>Scrum.org: Professional Scrum Master 1</p>
+            <p className={style.smallLineHeight}>ITIL: Foundation</p>
             <h3>EDUCATION</h3>
-            <h5>Degree</h5>
-            <p>Musical Theatre - 1st Class BA(hons): London College Music University of West London</p>
-            <h5>A Levels</h5>
-            <p>Physics (C), Maths (C), Music (C): Blue Coat C of E School</p>
+            <h5 className={style.smallLineHeight}>DEGREE</h5>
+            <p className={style.smallLineHeight}>Musical Theatre - 1st Class BA(hons): London College Music University of West London</p>
+            <h5 className={style.smallLineHeight}>A LEVELS</h5>
+            <p className={style.smallLineHeight}>Physics (C), Maths (C), Music (C): Blue Coat C of E School</p>
         </div>
       </div>
     );
