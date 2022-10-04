@@ -15,12 +15,12 @@ function Project() {
             <div className={style.projectLinks}>
             <button className={style.borderLeft}>
               <a href="https://waste-not-react.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                <img src={require('../../assets/website.svg').default} alt='codeIcon' />
+                <img src={require('../../assets/website.svg')} alt='website' />
               </a>
               </button>
               <button className={style.borderRight}>
                 <a href="https://github.com/5pyrx/waste-not" target="_blank" rel="noopener noreferrer">
-                  <img src={require('../../assets/code.svg').default} alt='codeIcon' />
+                  <img src={require('../../assets/code.svg')} alt='code' />
                 </a>
               </button>
             </div>
