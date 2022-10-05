@@ -32,12 +32,13 @@ function App() {
       <BrowserRouter>
         { isActive ?
           <>
-            <SideDrawer />
+            
             <Backdrop click={handleToggleMenu}/>
           </>
         : 
         <></>
         }
+          <SideDrawer isActive={isActive}/>
           <NavBar click={handleToggleMenu}/>
           <Route exact path="/" component={HomePage} />
           {/* <Route path="/#skills" component={Skills} /> */}

@@ -8,9 +8,15 @@ import LinkedInLogo from '../../assets/LinkedinBlack.png';
 import GithubLogo from '../../assets/GithubBlack.png';
 
 
-const sideDrawer = props => {
+const sideDrawer = (props) => {
   return (
-      <ul className={style.SideDrawer}>
+      <ul className={ props.isActive ?
+        
+        `${style.SideDrawer} ${style.open}`
+        :
+          style.SideDrawer
+          
+          }>
         <li className={style.flexList}>
           <a 
             href="https://www.linkedin.com/in/jonathan-spencer-55675792/" 
