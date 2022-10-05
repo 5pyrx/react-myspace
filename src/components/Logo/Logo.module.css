@@ -1,17 +1,17 @@
 
 .brand {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   /* display: flex; */
   /* justify-content: flex-start; */
 }
 
-.brand2 {
+/* .brand2 {
   width: 200px;
   height: 200px;
   display: flex;
   justify-content: flex-start;
-}
+} */
 
 .brand:before {
   background-size: 100%;
@@ -100,4 +100,17 @@ svg path{
 @keyframes rotate-3 {
   from { transform: rotate(0deg); }
     to { transform: rotate(0deg); }
+}
+
+
+@media (max-width: 600px) {
+  .brand:before {
+    width: 150px;
+    height: 150px;
+    line-height:8rem;
+    /* text-shadow: none; */
+  }
+  .logo {
+    display: none;
+  }
 }

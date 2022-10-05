@@ -1,24 +1,16 @@
-import React from 'react';
+import React from 'react'
 import { NavHashLink } from 'react-router-hash-link';
-// import { useLocation } from "react-router-dom";
-// custom hook
-// import { useScrollPosition } from '../../Hooks/useScrollPosition';
 
-// Style
-import style from './NavigationItems.module.css';
+import style from './SideDrawer.module.css';
 
 // Images
 import LinkedInLogo from '../../assets/LinkedinBlack.png';
 import GithubLogo from '../../assets/GithubBlack.png';
 
-function NavigationItems(props) {
+
+const sideDrawer = props => {
   return (
-    <>
-      <ul 
-        className={ 
-          style.NavigationItems
-          }
-      >
+      <ul className={style.SideDrawer}>
         <li className={style.flexList}>
           <a 
             href="https://www.linkedin.com/in/jonathan-spencer-55675792/" 
@@ -33,7 +25,7 @@ function NavigationItems(props) {
             <img src={GithubLogo} alt="Github"/>
           </a>
         </li>
-        <li>
+        <li className={style.listNav}>
           <NavHashLink 
             exact to="#projects" 
             smooth
@@ -46,7 +38,7 @@ function NavigationItems(props) {
             Projects
           </NavHashLink>
         </li>
-        <li>
+        <li className={style.listNav}>
         <NavHashLink 
             exact to="#experience" 
             activeClassName={style.activePage}
@@ -60,7 +52,7 @@ function NavigationItems(props) {
             Experience
           </NavHashLink>
         </li>
-        <li>
+        <li className={style.listNav}>
         <NavHashLink 
             exact to="#contact" 
             activeClassName={style.activePage}
@@ -75,13 +67,7 @@ function NavigationItems(props) {
           </NavHashLink>
         </li>
       </ul>
-      <div className={style.toggleButton} onClick={props.click}>
-        <span className={style.bar}></span>
-        <span className={style.bar}></span>
-        <span className={style.bar}></span>
-      </div>
-    </>
-  );
+  )
 }
 
-export default NavigationItems;
+export default sideDrawer;

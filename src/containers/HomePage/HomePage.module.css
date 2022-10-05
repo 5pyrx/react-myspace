@@ -46,3 +46,23 @@
 .Canvas {
   z-index: 1;
 }
+
+@media (max-width: 600px) {
+  .Content {
+    top: 28rem;
+    left: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .Content h2 {
+    margin: 0.5rem;
+    width: 100%;
+  }
+  .HomePage {
+    overflow-y: auto;
+  }
+  .HomePage section {
+    overflow: unset;
+    height: auto;
+  }
+}

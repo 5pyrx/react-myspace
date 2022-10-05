@@ -71,3 +71,15 @@
     font-weight: bold;
   }
 
+@media (max-width: 600px) {
+    .contactContainer{
+        box-shadow: none;
+        height: unset;
+    }
+    .Form input{
+        width: 100%;
+    }
+    .message textarea{
+        width: 100%;
+    }
+}

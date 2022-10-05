@@ -88,6 +88,16 @@
   margin: 2rem 0;
 }
 
-.sidePanel h3 {
-
+@media (max-width: 600px) {
+  .Project{
+    width: 100%;
+  }
+  .singleProject1 {
+    width: 23rem;
+    height: 18rem;
+  }
+  .singleProjectImage1 { 
+    width: 23rem;
+    margin: auto;
+  }
 }

@@ -15,3 +15,11 @@
     padding: 2rem;
     overflow: scroll;
 }
+
+@media (max-width: 600px) {
+    .contactContainer{
+        box-shadow: none;
+        overflow: auto;
+        height: auto;
+    }
+}

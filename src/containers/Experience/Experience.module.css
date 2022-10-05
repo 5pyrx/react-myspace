@@ -63,3 +63,10 @@
 .buttonFont {
   margin: auto;
 }
+
+
+@media (max-width: 600px) { 
+  .contentTitle {
+    margin: 8rem auto 2rem;
+  }
+}
