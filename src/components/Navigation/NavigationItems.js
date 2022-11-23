@@ -27,7 +27,7 @@ function NavigationItems(props) {
             <img src={LinkedInLogo} alt="Linkedin"/>
           </a>
           <a 
-            href="https://github.com/5pyrx" 
+            href="https://github.com/jay-sparks" 
             target="_blank" 
             rel="noopener noreferrer">
             <img src={GithubLogo} alt="Github"/>
