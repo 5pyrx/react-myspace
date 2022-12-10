@@ -14,7 +14,7 @@ function Project() {
             <div className={style.singleProjectImage1}></div>
             <div className={style.projectLinks}>
             <button className={style.borderLeft}>
-              <a href="https://waste-not-react.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://waste-not-js.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <img src={require('../../assets/website.svg')} alt='website' />
               </a>
               </button>
