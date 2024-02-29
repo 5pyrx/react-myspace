@@ -6,14 +6,8 @@ import { OrbitControls } from '@react-three/drei';
 import style from './HomePage.module.css';
 
 // Containers
-// import SkillsView from '../Skills/Skills.js';
 import Project from '../Project/Project.js';
 import Experience from '../Experience/Experience.js';
-import Footer from '../../components/Footer/Footer.js';
-
-
-//Components
-import Contact from '../Contact/Contact';
 
 // 3D model(s)
 import Painting from '../../components/3dModels/ScenePainting';
