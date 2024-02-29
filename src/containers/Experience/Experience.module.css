@@ -26,15 +26,26 @@
 
 .boxContainer {
   margin: 3rem 2rem;
-  width: 16rem;
+  width: 20rem;
+  height: 16rem;
   background-color: #fff;
   border-radius: 6px;
-  box-shadow:0 3px 10px rgb(0 0 0 / 0.2);
+  box-shadow:0 3px 10px rgb(0 0 0 / 0.4);
   padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .boxContainer p {
   line-height: 2;
+}
+
+.Contact {
+  position: relative;
+  width: 100%;
+  display: flex;
 }
 
 
@@ -55,14 +66,18 @@
   align-items: center;
 }
 
+.buttonBackground:hover{
+  box-shadow: 0 5px 20px rgb(0 0 0 / 0.8);
+}
+
 .buttonBackground:active {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
-  font-weight: bold;
 }
 
 .buttonFont {
   margin: auto;
 }
+
 
 
 @media (max-width: 600px) { 

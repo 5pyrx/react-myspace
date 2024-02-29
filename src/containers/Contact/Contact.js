@@ -10,9 +10,9 @@ function Contact() {
   return (
     <>
       <div className={style.Contact}>
-        <div className={style.contactContainer}>
+        {/* <div className={style.contactContainer}>
           <ContactForm />
-        </div>
+        </div> */}
         <Footer />
       </div>
       

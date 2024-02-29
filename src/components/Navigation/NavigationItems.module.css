@@ -22,7 +22,6 @@
 
 .NavigationInactive a{
   color: #000;
-  /* box-shadow: #fff; */
   text-decoration: none;
 }
 
@@ -35,7 +34,8 @@
 
 .NavigationItems a {
   color: #000;
-  /* box-shadow: #fff; */
+  font-weight: 900;
+  text-shadow: 1px 1px 3px #fff;
   text-decoration: none;
 
 

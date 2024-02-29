@@ -4,11 +4,13 @@ import { useState } from "react";
 import Modal from '../../components/Modal/Modal';
 
 import style from './Experience.module.css';
+import Footer from '../../components/Footer/Footer';
 
 function Experience() {
   const [ modalState, setModalState ] = useState(false);
 
   return (
+    <>
     <div className={style.Experience}>
       {modalState ? 
         <Modal closeModal={setModalState}/> 
@@ -29,8 +31,7 @@ function Experience() {
                 setModalState(true)
               }}>
                 <h3 className={style.buttonFont}>
-
-              View CV
+                  View CV
                 </h3>
           </button>
           <div className={style.boxContainer}>
@@ -40,9 +41,15 @@ function Experience() {
               Giving me a deep understand of how digital teams operate.</p>
           </div>
         </div>
+
       </div>
     }
     </div>
+      <div className={style.Contact}>
+      <Footer />
+      
+    </div>
+    </>
   );
 }
 

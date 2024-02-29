@@ -21,7 +21,7 @@ function NavigationItems(props) {
       >
         <li className={style.flexList}>
           <a 
-            href="https://www.linkedin.com/in/jonathan-spencer-55675792/" 
+            href="https://www.linkedin.com/in/jay-spencer-55675792/" 
             target="_blank" 
             rel="noopener noreferrer">
             <img src={LinkedInLogo} alt="Linkedin"/>

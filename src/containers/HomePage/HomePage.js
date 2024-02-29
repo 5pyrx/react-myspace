@@ -9,6 +9,7 @@ import style from './HomePage.module.css';
 // import SkillsView from '../Skills/Skills.js';
 import Project from '../Project/Project.js';
 import Experience from '../Experience/Experience.js';
+import Footer from '../../components/Footer/Footer.js';
 
 
 //Components
@@ -18,15 +19,16 @@ import Contact from '../Contact/Contact';
 import Painting from '../../components/3dModels/ScenePainting';
 
 function HomePage() {
-
+  
   const [ welcomeTime, setWelcomeTime ] = useState();
   const [ scale, setScale ] = useState(0.88);
-
+  
+  let x = window.matchMedia("(max-width: 700px)");
 
   useEffect(() => {
     setWelcomeTime(getDateTime());
      mediaQuery(x);
-  }, []);
+  }, [x]);
 
   const getDateTime = () => {
     const date = new Date();
@@ -51,7 +53,6 @@ function HomePage() {
     }
   }
 
-  var x = window.matchMedia("(max-width: 700px)");
  
   x.addEventListener("change", mediaQuery);
 
@@ -65,11 +66,12 @@ function HomePage() {
           <div className={style.topContainer}>
             <div className={style.contentWrapper}>
               <div className={style.Content}>
-                <h2>Good {welcomeTime}! <span role="img" aria-label="wave">👋</span></h2>
+                <h2>Good {welcomeTime}!</h2>
                 <h2>I'm Jay Spencer,</h2>
                 <h2>A creative front-end <br/>
                 web developer</h2>
               </div>
+              <div className={style.userGuide}><p>Click to drag</p></div>
             </div>
             
             <Canvas className={style.Canvas} >
@@ -84,9 +86,6 @@ function HomePage() {
         </section>
         <section id="experience">
           <Experience />
-        </section>
-        <section id="contact">
-          <Contact />
         </section>
       </div>
     </>

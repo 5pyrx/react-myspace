@@ -41,7 +41,6 @@ function App() {
           <SideDrawer isActive={isActive}/>
           <NavBar click={handleToggleMenu}/>
           <Route exact path="/" component={HomePage} />
-          {/* <Route path="/#skills" component={Skills} /> */}
           <Route path="/#projects" component={Project} />
           <Route path="/#experience" component={Experience} />
           <Route path="/#contact" component={Contact} />

@@ -26,8 +26,8 @@
 
 .HomePage section {
   scroll-snap-align: start;
-  height: 100vh;
-  overflow: scroll;
+  scroll-snap-type: y proximity;
+  /* overflow: hidden; */
 }
 
 .contentWrapper {
@@ -36,11 +36,33 @@
 
 .Content {
   position: absolute;
-  top: 240px;
+  top: 30vh;
   left: 3rem;
   font-size: 1.2rem;
   color: white;
   z-index: 2;
+}
+
+.userGuide{
+  width: 8rem;
+  height: 2rem;
+  background-color: black;
+  margin: auto;
+  z-index: 3;
+  position: absolute;
+  top: 55vh;
+  left: 50vw;
+  border-radius: 7px;
+  opacity: 42%;
+  color: aliceblue;
+  text-align: center;
+}
+
+.userGuide p{
+  all: unset;
+  line-height: 2rem;
+  font-weight: 600;
+  font-size: 0.8rem;
 }
 
 .Canvas {
