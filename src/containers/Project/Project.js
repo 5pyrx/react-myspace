@@ -5,10 +5,40 @@ import style from './Project.module.css';
 import webLogo from '../../assets/website.svg';
 import codeLogo from '../../assets/code.svg';
 
+
 function Project() {
   return (
       <div className={style.Project}>
         <h1 className={style.Header}>Projects</h1>
+
+        <div className={style.projContainer}>
+          <div className={style.singleProjectWrap2}>
+            <div className={style.sidePanelRight}>
+              <h3>Artico</h3>
+              <h4>A full stack responsive web app</h4>
+              <p><strong>Built using:</strong> React, CSS, Express, Node, PostgreSQL, Jest, SuperTest</p>
+              <p>
+                A full stack responsive web project, built to learn; dest driven development (TDD), model view controller (MVC) and database fundamentals.
+              </p>
+            </div>
+            <div className={style.singleProject1}>
+              <div className={style.singleProjectImage4}></div>
+              <div className={style.projectLinks}>
+              <button className={style.borderLeft}>
+                <a href="https://artico-app-js.netlify.app/" target="_blank" rel="noopener noreferrer">
+                  <img src={webLogo} alt='view website' />
+                </a>
+                </button>
+                <button className={style.borderRight}>
+                  <a href="https://github.com/Jay-Sparks/artico" target="_blank" rel="noopener noreferrer">
+                    <img src={codeLogo} alt='view code' />
+                  </a>
+                </button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
 
         <div className={style.projContainer}>
           <div className={style.singleProjectWrap1}>
@@ -27,7 +57,7 @@ function Project() {
                 </button>
               </div>
             </div>
-            <div className={style.sidePanel}>
+            <div className={style.sidePanelLeft}>
               <h3>3D Island</h3>
               <h4>A single page 3D app</h4>
               <p><strong>Built using:</strong> React, three.js, react-three-fiber, Drei, Tailwind </p>
@@ -40,7 +70,7 @@ function Project() {
 
         <div className={style.projContainer}>
           <div className={style.singleProjectWrap2}>
-            <div className={style.sidePanel}>
+            <div className={style.sidePanelRight}>
               <h3>3D t-shirts</h3>
               <h4>An AI t-shirt designer</h4>
               <p><strong>Built using:</strong> React, three.js, react-three-fiber, Drei, Express,openAI</p>
@@ -85,7 +115,7 @@ function Project() {
                 </button>
               </div>
             </div>
-            <div className={style.sidePanel}>
+            <div className={style.sidePanelLeft}>
               <h3>Waste Not</h3>
               <h4>An authenticated CRUD App</h4>
               <p><strong>Built using:</strong> React, Node, Ajax & Firebase</p>
