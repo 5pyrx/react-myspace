@@ -20,7 +20,7 @@ function Experience() {
           <h1>Professional Experience</h1>
           <p>I have worked in digital teams for over 8 years</p>
         </div>
-        <div className={style.boxFlex}>
+        <div className={style.flexCol}>
           <div className={style.wideBoxTop}>
               <h3>Software Engineer</h3>
               <p>
@@ -33,28 +33,30 @@ function Experience() {
                 And completed a full-stack Javascript software engineering course at Northcoders
               </p>
           </div>
-          <div className={style.boxContainer}>
-            <h3>Product Manager</h3>
-            <p>5 years as a digital product manager
-              assisting in the research, design and development of new products 
-              in the financial services industry.</p>
-          </div>
-          <button className={style.buttonBackground} onClick={() => {
-                setModalState(true)
-              }}>
-                <h3 className={style.buttonFont}>
-                  View CV
-                </h3>
-          </button>
-          <div className={style.boxContainer}>
-            <h3>Agile Scrum Master</h3>
-            <p>2 years as a scrum master, assisting remote teams in 
-              delivering complex data dashboards for tier 1 banks. 
-              </p>
-          </div>
-          <div className={style.wideBox}>
-            <h3>Entrepreuner</h3>
-            <p>Tech start-up founder of a mobile app called Tipsta, which allowed customers to tip restaurant staff directly. Designed using figma, built using meteor.js & launched to the app store in 2018</p>
+          <div className={style.boxFlex}>
+            <div className={style.boxContainer}>
+              <h3>Product Manager</h3>
+              <p>5 years as a digital product manager
+                assisting in the research, design and development of new products 
+                in the financial services industry.</p>
+            </div>
+            <button className={style.buttonBackground} onClick={() => {
+                  setModalState(true)
+                }}>
+                  <h3 className={style.buttonFont}>
+                    View CV
+                  </h3>
+            </button>
+            <div className={style.boxContainer}>
+              <h3>Agile Scrum Master</h3>
+              <p>2 years as a scrum master, assisting remote teams in 
+                delivering complex data dashboards for tier 1 banks. 
+                </p>
+            </div>
+            <div className={style.wideBox}>
+              <h3>Entrepreuner</h3>
+              <p>Tech start-up founder of a mobile app called Tipsta, which allowed customers to tip restaurant staff directly. Designed using figma, built using meteor.js & launched to the app store in 2018</p>
+            </div>
           </div>
         </div>
       </div>
