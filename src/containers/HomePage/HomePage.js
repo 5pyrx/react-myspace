@@ -65,7 +65,11 @@ function HomePage() {
                 <h2>A creative front-end <br/>
                 web developer</h2>
               </div>
-              <div className={style.userGuide}><p>Click to drag</p></div>
+              <div className={style.scrollDowns}>
+                <div className={style.mousey}>
+                  <div className={style.scroller}></div>
+                </div>
+              </div>
             </div>
             
             <Canvas className={style.Canvas} >

@@ -18,13 +18,25 @@ function Experience() {
       <div className={style.experienceContent}>
         <div className={style.contentTitle}>
           <h1>Professional Experience</h1>
-          <p>I have worked in digital teams for > 7 years</p>
+          <p>I have worked in digital teams for over 8 years</p>
         </div>
         <div className={style.boxFlex}>
+          <div className={style.wideBoxTop}>
+              <h3>Software Engineer</h3>
+              <p>
+                I started my engineering journey learning python basics, moving onto Javascript & JQuery and later learning React 16.
+                During my role as Innovation Product Manager I was able to assist in the build phase of new product concepts, 
+                building user interfaces for blockchain, savings and mortgage journeys.
+              </p>
+              <p>
+                I continued to deepen my knowledge of react, utilising resources such as Robin Weiruch's Road to React, Maximillian Schwarzmüller's complete guide and Bruno Simon's Three.js & React-three-fiber.
+                And completed a full-stack Javascript software engineering course at Northcoders
+              </p>
+          </div>
           <div className={style.boxContainer}>
             <h3>Product Manager</h3>
-            <p>I have worked as a digital product manager for 5 years; 
-              assisting in the research, design and development of new user experiences 
+            <p>5 years as a digital product manager
+              assisting in the research, design and development of new products 
               in the financial services industry.</p>
           </div>
           <button className={style.buttonBackground} onClick={() => {
@@ -36,12 +48,15 @@ function Experience() {
           </button>
           <div className={style.boxContainer}>
             <h3>Agile Scrum Master</h3>
-            <p>I was a scrum master for 2 years, assisting a remote team 
-              delivering complex data dashboards for a tier 1 bank. 
-              Giving me a deep understand of how digital teams operate.</p>
+            <p>2 years as a scrum master, assisting remote teams in 
+              delivering complex data dashboards for tier 1 banks. 
+              </p>
+          </div>
+          <div className={style.wideBox}>
+            <h3>Entrepreuner</h3>
+            <p>Tech start-up founder of a mobile app called Tipsta, which allowed customers to tip restaurant staff directly. Designed using figma, built using meteor.js & launched to the app store in 2018</p>
           </div>
         </div>
-
       </div>
     }
     </div>

@@ -46,12 +46,12 @@ function Project() {
               <div className={style.singleProjectImage2}></div>
               <div className={style.projectLinks}>
               <button className={style.borderLeft}>
-                <a href="https://waste-not-js.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <a href="https://threejs-island.netlify.app/" target="_blank" rel="noopener noreferrer">
                   <img src={webLogo} alt='view website' />
                 </a>
                 </button>
                 <button className={style.borderRight}>
-                  <a href="https://github.com/5pyrx/waste-not" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/Jay-Sparks/threejs-island/tree/master" target="_blank" rel="noopener noreferrer">
                     <img src={codeLogo} alt='view code' />
                   </a>
                 </button>
@@ -83,12 +83,12 @@ function Project() {
               <div className={style.singleProjectImage3}></div>
               <div className={style.projectLinks}>
               <button className={style.borderLeft}>
-                <a href="https://waste-not-js.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <a href="https://threejs-tshirt-ai.netlify.app/" target="_blank" rel="noopener noreferrer">
                   <img src={webLogo} alt='view website' />
                 </a>
                 </button>
                 <button className={style.borderRight}>
-                  <a href="https://github.com/5pyrx/waste-not" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/Jay-Sparks/threejs_ai_tshirts" target="_blank" rel="noopener noreferrer">
                     <img src={codeLogo} alt='view code' />
                   </a>
                 </button>

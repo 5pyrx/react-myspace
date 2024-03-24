@@ -7,7 +7,8 @@
 .experienceContent {
   font-size: 0.9rem;
   color: black;
-  margin: auto;
+  margin: 6rem auto;
+  min-height: 80vh;
 }
 
 .contentTitle {
@@ -25,9 +26,9 @@
 }
 
 .boxContainer {
-  margin: 3rem 2rem;
+  margin: 1rem 2rem;
   width: 20rem;
-  height: 16rem;
+  height: 10rem;
   background-color: #fff;
   border-radius: 6px;
   box-shadow:0 3px 10px rgb(0 0 0 / 0.4);
@@ -37,6 +38,61 @@
   flex-direction: column;
   justify-content: center;
 }
+
+.boxContainer h3{
+  margin: 0 0 1rem;
+}
+
+.wideBox{
+  margin: 1rem 2rem;
+  width: 48rem;
+  height: 5rem;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow:0 3px 10px rgb(0 0 0 / 0.4);
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wideBox p{
+  display: block;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 1.2rem;
+}
+
+.wideBox h3{
+  margin: 0 0 1rem;
+}
+
+.wideBoxTop{
+  margin: 1rem 2rem;
+  width: 48rem;
+  /* height: 14rem; */
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow:0 3px 10px rgb(0 0 0 / 0.4);
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wideBoxTop p{
+  display: block;
+  margin: 1.5rem;
+  margin-block-end: 0;
+  line-height: 1.5rem;
+}
+
+.wideBoxTop h3{
+  margin: 0 0 1rem;
+}
+
 
 .boxContainer p {
   line-height: 2;
